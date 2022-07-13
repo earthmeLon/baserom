@@ -1,0 +1,5 @@
+# Configs / Tools
+
+Files to be copied over after Tool extraction for installation.
+
+Directory names should match Tool names in `../installation.json`.

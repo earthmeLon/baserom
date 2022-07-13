@@ -1,0 +1,12 @@
+# Configs
+
+Configurations and Files used during installation.
+
+
+These files shouldn't be edited for a ROMHack.
+Instead, edit the files found within the instance install directory. (ie `Installs/RHRBRS_0.1/`)
+
+### TODO List
+
+* Install `Pallettes` so changes aren't in `git` tree
+* Install `TileSets` so changes aren't in `git` tree

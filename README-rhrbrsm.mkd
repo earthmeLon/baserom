@@ -1,0 +1,75 @@
+# ROMHack Races BaseROM Studio Manager
+
+> Install and manage ROMHack Races BaseROM Studio instances
+
+1. Download and cache Tools in `./Downloads`
+1. Install RHRBRS instances
+1. Backup RHRBRS instances
+1. (opt) Specify `TARGET` to install/manage multiple instances
+
+
+```bash
+✔ 23:11 meLon@Windows ~/Projects/baserom $ ./rhrbrsm.py -h
+usage: rhrbrsm.py [-h] [-v] [-t TARGET] [--install-path [INSTALL_PATH]]
+    [--retroarch-path [RETROARCH_PATH]] [--cleanrom-path [CLEANROM_PATH]]
+    {install,backup,buildbaserom} ...
+
+ROMHack Races Base ROM Studio (RHRBRS) Manager
+
+positional arguments:
+  {install,backup,buildbaserom}
+    install             Install RHRBRS Instance
+    backup              Create Backup of RHRBRS Instance
+    buildbaserom        Build ROMHack Races BaseROM
+
+options:
+  -h, --help            Show this help message and exit.
+  -v, --version         Show additional version details.
+  -t TARGET, --target TARGET
+                        Name of installation target.
+                        (default: 0.1)
+  --install-path [INSTALL_PATH]
+                        Path for RHRBRS Installations.
+                        (default: C:\Users\meLon\Projects\baserom\Installs)
+  --retroarch-path [RETROARCH_PATH]
+                        Path to existing RetroArch emulator binary.
+                        (default: C:\Users\meLon\AppData)
+  --cleanrom-file [CLEANROM_FILE]
+                        Path to Super Mario World headerless .smc ROM (ie: (U) [!]).
+                        A copy is created in the installation directory.
+                        (default: C:\Users\meLon\Projects\baserom\clean.smc)
+
+version: 0.1
+```
+
+
+## Examples
+
+### Install
+
+> Create RHRBRS installation
+
+```bash
+# Install default instance
+./rhrbrsm.py install --force-install-configs
+# Install named instance
+./rhrbrsm.py -t banana install --force-install-configs
+# Install instance on another disk
+./rhrbrsm.py install --force-install-configs --install-path='D:\RHRBRS_Installs'
+```
+
+### Backup
+
+> Backup RHRBRS installation
+
+* Backups are found in the `/Installs/_Backups/` directory.
+* Backups are created with current year and julian date (ie: `2021-001` - `2021-365`)
+* Backups of the same instance on the same day prevent collision (ie: `2021-001-165769413303`)
+
+```bash
+# Backup default instance
+./rhrbrsm.py backup
+# Backup named instance
+./rhrbrsm.py -t banana backup
+./rhrbrsm.py backup --install-path='D:\RHRBRS_Installs'
+```

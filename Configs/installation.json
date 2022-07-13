@@ -1,0 +1,62 @@
+{
+  "rhrbr": {
+    "version": "4.0"
+  },
+  "tools": {
+    "addmusik": {
+      "downloadURL": "https://dl.smwcentral.net/24994/AddmusicK_1.0.8.zip",
+      "sha256sum": "56d0f300f316b2bb016d976e85bb0fb6303c7bd56a97bd2dc0b9c3a4779fce5c"
+    },
+    "asar": {
+      "downloadURL": "https://dl.smwcentral.net/25953/asar181.zip",
+      "sha256sum": "16242f02a32c69ffcfa27b5a11496b8957352d5864abeaac09283e0f67d0336e"
+    },
+    "flips": {
+      "downloadURL": "https://dl.smwcentral.net/11474/floating.zip",
+      "sha256sum": "1e28e9217084b81ba53d51c4b5d29179a6c1f9d2e0f900c08c55df1666298c80"
+    },
+    "gps": {
+      "downloadURL": "https://dl.smwcentral.net/29130/GPS%20v1.4.3.zip",
+      "sha256sum": "a4034b4eefb7cb960d8f53a4a1d21bfafffd443f21f2e6ce2ddb64d11cfbe22b"
+    },
+    "hrm": {
+      "downloadURL": "https://github.com/Underrout/human-readable-map16-cli/releases/download/v0.2.0/human-readable-map16-cli-v0.2.0.zip",
+      "sha256sum": "70d51954166abb1f63e66aa825d4c0da82628cfa292d0eb5a614c1f7dffc4be3"
+    },
+    "lunarmagic": {
+      "downloadURL": "https://dl.smwcentral.net/28429/lm331.zip",
+      "sha256sum": "8d7f81deb5c4c8e78a3e0c102b73fe0dbf0f027eb61c06bf95cdee86cb0c8eba"
+    },
+    "lunarhelper": {
+      "downloadURL": "https://github.com/Underrout/LunarHelper/releases/download/v1.5.0-LMC/LunarHelper-v1.5.0.zip",
+      "sha256sum": "c6dff0cd828df8651aa274784457454758070b88e6abb8728dbd684412091f1b",
+      "templates": {
+        "config_user.txt.j2": "config_user.txt"
+      }
+    },
+    "lunarmonitor": {
+      "downloadURL": "https://github.com/Underrout/lunar-monitor/releases/download/v1.2.2/lunar-monitor-v1.2.2.zip",
+      "sha256sum": "524efbb4a8439fa1321b782baf217c550a414b20c331c096d52eb36d085b6e3b",
+      "lunarmagicFiles": [
+        "LM3.31/lunar-monitor.dll"
+      ],
+      "templates": {
+        "lunar-monitor-config.txt.j2": "lunar-monitor-config.txt"
+      }
+    },
+    "pixi": {
+      "downloadURL": "https://dl.smwcentral.net/26026/pixi_v1.32.zip",
+      "sha256sum": "4f90bbd636a60ae8e8e423eda31c4761198e2268ba0e8060b87b0b343946f961"
+    },
+    "uberasm": {
+      "downloadURL": "https://dl.smwcentral.net/19982/UberASMTool14.zip",
+      "sha256sum": "619b8e60e3e5e4e25ea0ec98949985a55f4ca1fdb97940268e6bde6a5c16243e",
+      "nullFiles": [
+        "gamemode/.gitkeep",
+        "overworld/.gitkeep",
+        "level/.gitkeep",
+        "library/.gitkeep"
+      ]
+    }
+  }
+}

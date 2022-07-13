@@ -1,0 +1,19 @@
+-- working directory (all paths are relative to this one)
+dir = {{config['installPath']}}
+
+-- rom paths
+clean = ../../clean.smc
+output = {{config['installName']}}.smc
+temp = temp.smc
+package = {{config['installName']}}.bps
+
+-- tools
+asar_path = {{config['tools']['asar']['toolPath']}}/asar.exe
+lm_path = {{config['tools']['lunarmagic']['toolPath']}}/Lunar Magic 3.2.1/Lunar Magic.exe
+flips_path = {{config['tools']['flips']['toolPath']}}/flips.exe
+
+-- emulator and testing
+retroarch_path = {{config['retroarchPath']}}\retroarch.exe
+retroarch_core = {{config['retroarchPath']}}\cores\snes9x_libretro.dll
+-- snes9x_path = C:\path\to\snes9x.exe
+-- mesens_path = C:\path\to\mesen-s.exe

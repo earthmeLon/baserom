@@ -1,0 +1,12 @@
+# Configs / Templates
+
+Jinja2 template files to be rendered during installation.
+
+```json
+"templates": {
+    "config_user.txt.j2": "config_user.txt"
+}
+```
+
+Placement of rendered file is relative to Tool's path.
+
