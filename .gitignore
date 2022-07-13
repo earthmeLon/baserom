@@ -15,6 +15,7 @@ temp.*
 Thumbs.db
 *.*~
 *.dll
+.env/
 *.exe
 *.extmod
 *.lrp

@@ -42,10 +42,18 @@ options:
 version: 0.1
 ```
 
+## Install RHRBRSM
 
-## Examples
+```bash
+python3 -m venv .env
+source .env/bin/activate
+pip install -r requirements.txt
+```
 
-### Install
+
+## Usage Examples
+
+### Install RHRBRS instance
 
 > Create RHRBRS installation
 
@@ -62,7 +70,7 @@ version: 0.1
 
 > Backup RHRBRS installation
 
-* Backups are found in the `/Installs/_Backups/` directory.
+* Backups are found in the `./Installs/_Backups/` directory.
 * Backups are created with current year and julian date (ie: `2021-001` - `2021-365`)
 * Backups of the same instance on the same day prevent collision (ie: `2021-001-165769413303`)
 
