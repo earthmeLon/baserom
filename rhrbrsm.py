@@ -13,6 +13,10 @@ import distutils
 import hashlib
 import datetime
 
+import distutils
+from distutils import dir_util
+from distutils import file_util
+
 from jinja2 import Template
 
 __all__ = []
@@ -35,6 +39,7 @@ TOOLEXTRASPATH = CONFIGSPATH + '/Tools'
 RETROARCHPATH_DEFAULT = f"{SCRIPTPATH}/Emulators/RetroArch"
 for path in [
     "%s/RetroArch" % (os.getenv('APPDATA', '')),
+    "C:\\RetroArch-Win64",
     RETROARCHPATH_DEFAULT
 ]:
     if os.path.exists(path):
